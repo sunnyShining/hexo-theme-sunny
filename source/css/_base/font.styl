@@ -5,73 +5,64 @@
 $CDN = hexo-config("CDN") || './fonts/'
 
 @font-face
-  font-family "HomizioNova"
-  src url($CDN + 'homizio-nova/light.ttf'),url($CDN + 'homizio-nova/light.otf')
-  font-weight normal
+  font-family: "iconfont"
+  src url($CDN + 'iconfont.eot?t=1536656193704'), url('./fonts/iconfont/iconfont.eot?t=1536656193704')
+  src url($CDN + 'iconfont.eot?t=1536656193704#iefix') format('embedded-opentype'),
+  url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+  url('./fonts/iconfont/iconfont.ttf?t=1536656193704') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('./fonts/iconfont/iconfont.svg?t=1536654725680#iconfont') format('svg') /* iOS 4.1- */
+
+.iconfont
+  font-family "iconfont" !important
+  font-size 16px
   font-style normal
-@font-face
-  font-family "HomizioNova"
-  src url($CDN + 'homizio-nova/light_italic.ttf'),url($CDN + 'homizio-nova/light_italic.otf')
-  font-weight normal
-  font-style italic
-@font-face
-  font-family "HomizioNova"
-  src url($CDN + 'homizio-nova/regular.ttf'),url($CDN + 'homizio-nova/regular.otf')
-  font-weight bold
-  font-style normal
-@font-face
-  font-family "HomizioNova"
-  src url($CDN + 'homizio-nova/italic.ttf'),url($CDN + 'homizio-nova/italic.otf')
-  font-weight bold
-  font-style italic
-@font-face
-  font-family 'icomoon'
-  src url($CDN + 'icomoon/icomoon.eot?e2xg5y'), url('./fonts/icomoon/icomoon.eot?e2xg5y')
-  src url($CDN + 'icomoon/icomoon.eot?#iefixe2xg5y') format('embedded-opentype'),
-      url($CDN + 'icomoon/icomoon.woff?e2xg5y') format('woff'),
-      url($CDN + 'icomoon/icomoon.ttf?e2xg5y') format('truetype'),
-      url($CDN + 'icomoon/icomoon.svg?e2xg5y#icomoon') format('svg'),
-      url('./fonts/icomoon/icomoon.eot?#iefixe2xg5y') format('embedded-opentype'),
-      url('./fonts/icomoon/icomoon.woff?e2xg5y') format('woff'),
-      url('./fonts/icomoon/icomoon.ttf?e2xg5y') format('truetype'),
-      url('./fonts/icomoon/icomoon.svg?e2xg5y#icomoon') format('svg')
-  font-weight normal
-  font-style normal
-[class^="icon-"],[class*=" icon-"]
-  font-family 'icomoon'
-  speak none
-  font-style normal
-  font-weight normal
-  font-variant normal
-  text-transform none
-  line-height 1
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
-.icon-home:before
-  content "\e900"
-.icon-office:before
-  content "\e903"
-.icon-newspaper:before
-  content "\e904"
+
+.icon-filesempty:before
+  content "\e78f"
+
 .icon-profile:before
-  content "\e923"
-.icon-files-empty:before
-  content "\e925"
-.icon-price-tags:before
-  content "\e936"
-.icon-envelop:before
-  content "\e945"
-.icon-bubble:before
-  content "\e96b"
-.icon-comment:before
-  content "\e96d"
-.icon-about:before
-  content "\e976"
+  content "\e82b"
+
 .icon-cogs:before
-  content "\e995"
-.icon-paragraph-justify:before
-  content "\ea7a"
-.icon-lab:before
-  content "\ea80"
+  content "\e61b"
+
+.icon-ccenvelope:before
+  content "\e640"
+
+.icon-code:before
+  content "\e665"
+
+.icon-home:before
+  content "\e61c"
+
+.icon-bubbles:before
+  content "\e66f"
+
+.icon-about:before
+  content "\e641"
+
 .icon-github:before
-  content "\eab1"
+  content "\e712"
+
+.icon-office:before
+  content "\e814"
+
+.icon-menu:before
+  content "\e65f"
+
+.icon-comment:before
+  content "\e65d"
+
+.icon-newspaper:before
+  content "\e653"
+
+.icon-python:before
+  content "\f216"
+
+.icon-interview:before
+  content "\e807"
+
+.icon-skill:before
+  content "\e501"

@@ -27,5 +27,12 @@
         <%- partial('_widget/friend_links') %>
     </section>
     <% } %>
+    <% if (theme.sponsor.enable && theme.sponsor['list']) { %>
+    <!-- 友情链接 -->
+    <section class="widget">
+        <h3 class="widget-hd"><strong>赞助</strong></h3>
+        <%- partial('_widget/sponsor') %>
+    </section>
+    <% } %>
 </aside>
 <!-- / 侧栏部分 -->

@@ -1,0 +1,27 @@
+<!-- 自定义学习python3页 -->
+
+<section>
+    <img title="" src="<%- url_for('/img/python_logo.jpeg?v=4') %>" alt="python3 Banner" style="max-width: 60%; margin: 0 auto; display: inherit;" alt="Banner" >
+</section>
+<%
+    var projects = page.projects;
+    for (var i in projects) {
+%>
+    <p style="color: #444;">
+        <!--
+        <span class="icon-cogs"></span>
+        -->
+        <span class="icon-price-tags"></span>
+        <%- date(projects[i].time, 'YYYY-MM-DD') %>  <%- projects[i].title %>
+    </p>
+
+    <ul style="list-style-type: none;">
+        <% var content = projects[i].content; %>
+        <% for (var j in content) { %>
+        <li>
+            <a href="<%- content[j].link %>" target="_blank" class="icon iconfont icon-code fr" title="查看代码" style="color: #333; border-bottom: none; font-size: 14px; text-decoration: none;"></a>
+            <span><%- content[j].name %></span>
+        </li>
+        <% } %>
+    </ul>
+<% } %>

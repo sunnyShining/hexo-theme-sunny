@@ -1,7 +1,5 @@
 #############################
-# Xups for Hexo 主题配置文件
-# Jelon
-# http://jelon.top
+# 主题配置文件
 #############################
 
 #----------------------------
@@ -15,7 +13,19 @@ menu:
   lab:
     name: 实验室
     link: /lab/
-    icon: icon-lab
+    icon: icon-code
+  python:
+    name: python3
+    link: /python3/
+    icon: icon-python
+  skills:
+    name: 技巧
+    link: /skills/
+    icon: icon-skill
+  interview:
+    name: 面试
+    link: /interview/
+    icon: icon-interview
   about:
     name: 关于
     link: /about/
@@ -24,15 +34,6 @@ menu:
     name: 留言
     link: /comment/
     icon: icon-comment
-
-#----------------------------
-# 副导航
-#----------------------------
-subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
 
 #----------------------------
 # RSS
@@ -47,7 +48,7 @@ favicon: /favicon.ico
 #----------------------------
 # 头像url
 #----------------------------
-avatar: /img/jelon.jpg
+avatar: /img/sunny.jpg
 
 #----------------------------
 # 是否开启分享
@@ -58,18 +59,17 @@ share: true
 # 侧栏是否显示微博秀
 #----------------------------
 weibo_show:
-  enable: false
-  code: <iframe id="myWeibo" width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=2376003112&verifier=796ea597&dpc=1"></iframe>
-
+  enable: true
+  code: <iframe id="myWeibo" width="100%" height="400" class="share_self"  frameborder="0" scrolling="no" src="https://widget.weibo.com/weiboshow/index.php?language=&width=0&height=400&fansRow=1&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=2449308854&verifier=454ed586&dpc=1"></iframe>
 #----------------------------
 # 是否开启评论
 #----------------------------
 comment:
   enable: true
-  owner: jangdelong
+  owner: sunnyShining
   repo: blog_comments
-  client_id: b08ed25e52c57993e69c
-  client_secret: 1cb9545488f0380904b87350e7c5a270ae03bab7
+  client_id: a6d772d870a68bc9c558
+  client_secret: 4f3ed1ee231fa1e940c0530f86d5d788512f2027
 
 #----------------------------
 # 是否开启云标签
@@ -83,18 +83,27 @@ friends:
   enable: true
   list:
     1:
-      name: Haoren博客
-      title: 网络安全博客
-      link: http://blog.sina.com.cn/u/1825875765
+      name: liaolongdong的github
+      title: liaolongdong的github
+      link: https://github.com/liaolongdong
     2:
-      name: Maxwell博客
-      title: 技术博客
-      link: http://blog.csdn.net/yeweiouyang
+      name: CaptainYYH的github
+      title: CaptainYYH的github
+      link: https://github.com/CaptainYYH
     3:
-      name: 朱旋个人博客
-      title: 技术博客
-      link: http://xuanzh.cc/
-
+      name: Smile415的github
+      title: Smile415的github
+      link: https://github.com/Smile415
+#----------------------------
+# 赞助
+#----------------------------
+sponsor:
+  enable: true
+  list:
+      0:
+        logo: https://sunnyshining.github.io/img/sponsor/upyun_logo.png
+        title: 又拍云
+        link: https://www.upyun.com/league?utm_source=baidu&utm_medium=ppc&utm_campaign=cdn&utm_term=freecdn&utm_content=fc001
 #----------------------------
 # 头部链接
 #----------------------------
@@ -104,33 +113,34 @@ head_links:
     sup:
       0:
         name: Github
-        link: https://github.com/jangdelong
+        link: https://github.com/sunnyShining
+      1:
+        name: gitee
+        link: https://gitee.com/sunnyShining
       last:
-        name: Hosted by Coding Pages
-        link: https://pages.coding.me
+        name: 百度统计
+        link: https://tongji.baidu.com/web/26214126/homepage/index
     sub:
       sinaweibo:
         name: 新浪微博
-        link: http://weibo.com/jangdelong
+        link: https://weibo.com/u/2449308854
       qqweibo:
-        name: Facebook
-        link: https://www.facebook.com/profile.php?id=100011855760219&ref=bookmarks
+        name: 简书
+        link: https://www.jianshu.com/u/e53a4b002124
 #----------------------------
 # SEO
 #----------------------------
 SEO:
-  keywords: Jelon, 前端, Web, 张德龙, 前端开发
-  description: Jelon个人前端小站
-
+  keywords: sunny, 前端, Web, 前端开发
+  description: sunny个人技术小站
 #----------------------------
 # 百度分析
 #----------------------------
 baidu_analytics: true
-
 #----------------------------
 # 高亮样式
 #----------------------------
-highlight_theme: normal
+highlight_theme: night
 #----------------------------
 # CDN
 # 如: //7xs305.com1.z0.glb.clouddn.com/

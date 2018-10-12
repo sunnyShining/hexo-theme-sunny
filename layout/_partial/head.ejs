@@ -24,6 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" >
     <meta name="keywords" content="<%- theme.SEO.keywords %>" >
     <meta name="description" content="<%- theme.SEO.description %>" >
+    <meta name="referrer" content="no-referrer" />
 
     <% if (theme.rss) { %>
     <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml" >
@@ -34,8 +35,6 @@
     <link rel="shortcut icon" href="<%- url_for(theme.favicon) %>" >
     <% } %>
     <%- css('css/style') %>
-    <!--[if lt IE 9]>
-    <%- js('js/html5') %>
-    <![endif]-->
+    <%- js('js/utils') %>
     <%- partial('baidu-analytics') %>
 </head>

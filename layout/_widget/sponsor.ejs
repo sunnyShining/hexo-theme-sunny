@@ -1,0 +1,13 @@
+<!-- 赞助 -->
+<ul class="widget-bd">
+    <%
+    var list = theme.sponsor['list'];
+    for (var i in list) {
+    %>
+        <li>
+            <a href="<%= list[i].link %>" target="_blank" title="<%= list[i].title %>">
+            	<img width="100%" src="<%= list[i].logo %>" alt="<%= list[i].title %>" />
+            </a>
+        </li>
+    <% } %>
+</ul>
