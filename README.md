@@ -1,10 +1,9 @@
-# Xups 主题安装及 Hexo 使用教程
+# sunny 主题安装及 Hexo 使用教程
 ![预览](./sunny.png)
 
 ## 主题的一些特性
 
-1. 扁平。思路源于大前端 WordPress 主题。
-2. 自带博客评论系统。博客主题自带评论系统，基于 github issues 实现，了解更多请点击[基于 github issues实现的评论框](http://jelon.top/posts/xups-comment-box/)。
+1. 主题源于[hexo-theme-xups](https://github.com/jangdelong/hexo-theme-xups)。
 
 ## 使用指引
 
@@ -21,13 +20,13 @@
 
     ```
     cd themes
-    git clone https://github.com/jangdelong/hexo-theme-xups.git
+    git clone https://github.com/sunnyShining/hexo-theme-sunny
     ```
 
 3. 配置 _config.yml 的 theme 配置
 
     ```
-    theme: hexo-theme-xups
+    theme: hexo-theme-sunny
     ```
 
 4. 运行 `hexo s --watch`
@@ -61,7 +60,7 @@
 1. 使用markdown写博文
 2. 建议图片进行单独 cdn 存储
 3. 标准配图
-   - xups主题现默认有0-9共10张博客配图
+   - sunny主题现默认有0-9共10张博客配图
    - 博客封面配图：200x140，命名：xxx_thumbnail
 4. 指明文章的标题、作者信息、封面图片地址、博客摘要
 
@@ -122,26 +121,10 @@
       client_id: xxxxxxxxxx # github application client id
       client_secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx # github application secret
     ```
-4. 评论框使用
-
-    ```html
-    <div id="comments" class="comment">
-    </div>
-    <script>
-    JELON.Comment({
-      container: 'comments', // 评论框容器id或对象，留空是默认为 comments 
-      label: '<%- post.slug %>' || '<%- post.path %>',  // 文章标签
-      owner: '<%- theme.comment.owner %>', // GitHub application 创建者
-      repo: '<%- theme.comment.repo %>', // issue 所在仓库名
-      clientId: '<%- theme.comment.client_id %>', // GitHub application client_id
-      clientSecret: '<%- theme.comment.client_secret %>' // GitHub application client_secret
-    });
-    </script>
-    ```
 
 ## 其他
 
-- [Jelon前端小站](http://jelon.top)
+- [sunny前端小站](https://sunnyshining.github.io)
 
 ## LICENCE
 
